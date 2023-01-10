@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Identifier that must be unique within the hosting gallery -->
+        <id>joe-kruger.Easyconsole</id>
+
+        <!-- Package version number that is used when resolving dependencies -->
+        <version>1.0.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Joe Kruger</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>Joe Kruger</owners>
+        
+         <!-- Project URL provides a link for the gallery -->
+        <projectUrl>https://github.com/joe-kruger/EasyConsole</projectUrl>
+
+         <!-- License information is displayed on the gallery -->
+        <license type="expression">Apache-2.0</license>
+        
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>Bug fixes and performance improvements</releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>An Easy console framework for generating menus and handling IoC</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2022 BestTalk Limited</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>console menus</tags>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+            <dependency id="Microsoft.Extensions.DependencyInjection" version="6.0.0" />
+			<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0" />
+        </dependencies>
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+        <file src="EasyConsole.dll" target="lib\netstandard2.0" />
+    </files>
+</package>
